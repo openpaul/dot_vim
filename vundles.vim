@@ -79,7 +79,7 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'christoomey/vim-sort-motion'
 Plugin 'vim-scripts/ReplaceWithRegister' 
 Plugin 'nathangrigg/vim-beancount'
-
+Plugin 'jalvesaq/Nvim-R'
 " {{{ Disabled stfuff:
 " Plugin 'luochen1990/rainbow'
 " Plugin 'tpope/vim-markdown'
@@ -150,7 +150,7 @@ if v:version >= 703
       " Plugin 'chrisbra/histwin.vim'
 endif
 if v:version >= 704
-    Plugin 'SirVer/ultisnips'
+    "Plugin 'SirVer/ultisnips'
 endif
 
 

@@ -371,7 +371,7 @@ filetype indent on
 autocmd! vimrc BufWritePost .vimrc source $MYVIMRC
 autocmd! vimrc BufWritePost vundles.vim source $MYVIMRC
 
-autocmd vimrc FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd vimrc FileType python setlocal omnifunc=pythoncomplete#Complete
 
 autocmd vimrc BufNewFile,BufRead wscript* set filetype=python
 
@@ -739,11 +739,6 @@ let g:haddock_docdir="/usr/share/doc/ghc/html/"
 " {{{ iPython
 vmap <silent> <leader>ss :python dedent_run_these_lines()<CR>
 " }}}
-" {{{ Jedi
-let g:jedi#documentation_command="<leader>k"
-let g:jedi#popup_on_dot=1
-let g:jedi#use_tabs_not_buffers=0
-" }}}
 " {{{ Latex-Box
 let g:LatexBox_latexmk_async=1
 let g:LatexBox_output_type="pdf"
@@ -874,7 +869,7 @@ let g:UltiSnipsSnippetsDir="~/.vim/bundle-own/my-snippets/UltiSnips"
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
-let g:UltiSnipsUsePythonVersion=2
+let g:UltiSnipsUsePythonVersion=3
 
 map <leader>ls <Esc>:call UltiSnips#ListSnippets()<CR>
 map <leader>ue :UltiSnipsEdit<CR>
