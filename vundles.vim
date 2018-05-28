@@ -47,7 +47,7 @@ Plugin 'caio/querycommandcomplete.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kana/vim-textobj-entire'
 Plugin 'tpope/vim-dispatch'
-Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'tpope/vim-eunuch'
 Plugin 'prendradjaja/vim-vertigo'
 Plugin 'PeterRincker/vim-argumentative'
 Plugin 'sickill/vim-pasta'
@@ -56,6 +56,8 @@ Plugin 'Shougo/neomru.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'shougo/unite-outline'
 Plugin 'shougo/neoyank.vim'
+Plugin 'Shougo/vimfiler.vim'
+Plugin 'Shougo/neossh.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'mhinz/vim-signify'
 Plugin 'Glench/Vim-Jinja2-Syntax'
@@ -63,7 +65,6 @@ Plugin 'groenewege/vim-less'
 Plugin 'ivyl/vim-bling'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'justinmk/vim-sneak'
-Plugin 'mantiz/vim-plugin-dirsettings'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'mileszs/ack.vim'
@@ -81,6 +82,8 @@ Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'nathangrigg/vim-beancount'
 Plugin 'jalvesaq/Nvim-R'
 " {{{ Disabled stfuff:
+" Plugin 'qpkorr/vim-renamer'
+" Plugin 'mantiz/vim-plugin-dirsettings'
 " Plugin 'luochen1990/rainbow'
 " Plugin 'tpope/vim-markdown'
 " Plugin 'tpope/vim-speeddating'
@@ -117,14 +120,18 @@ Plugin 'jalvesaq/Nvim-R'
 " Plugin 'mattn/webapi-vim'
 " Plugin 'mattn/gist-vim'
 " Plugin 'vim-scripts/DrawIt'
+" Plugin 'nelstrom/vim-visual-star-search' " Suspect errors when searching
 " }}}
 
 Plugin 'sanjayankur31/sli.vim'
 
 if executable('ghc')
     Plugin 'lukerandall/haskellmode-vim'
-    Plugin 'eagletmt/ghcmod-vim'
     Plugin 'eagletmt/neco-ghc'
+    Plugin 'commercialhaskell/hindent'
+endif
+if executable('ghc-mod')
+    Plugin 'eagletmt/ghcmod-vim'
 endif
 
 if executable('ledger')
@@ -137,12 +144,13 @@ if executable('task')
 endif
 
 " Since YCM requires manual installation, dont enable it by default everywhere
-let g:ycm_hosts=["dopamine", "lark"]
+let g:hosts_ycm=["dopamine", "lark", "hel", "abed", "beli"]
+let g:hosts_no_jedi=["gordon"]
 let g:ycm_requirements_met = v:version >= 704 || (v:version == 703 && has('patch584'))
-if g:ycm_requirements_met && index(g:ycm_hosts, hostname()) >= 0
+if g:ycm_requirements_met && index(g:hosts_ycm, hostname()) >= 0
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'rdnetto/YCM-Generator'
-else
+elseif index(g:hosts_no_jedi, hostname()) == -1
     Plugin 'davidhalter/jedi-vim'
 endif
 
@@ -162,6 +170,10 @@ endif
 " For standalone only (see
 " https://github.com/Lokaltog/powerline/blob/develop/docs/source/overview.rst)
 " Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" }}}
+
+" {{{ My stuff
+Plugin 'obreitwi/vim-sort-folds'
 " }}}
 
 " {{{ Other repositories
