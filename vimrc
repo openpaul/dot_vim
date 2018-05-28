@@ -135,7 +135,8 @@ endfunction
 command! -bang -nargs=* -complete=tag S call SearchMultiLine(<bang>0, <f-args>)|normal! /<C-R>/<CR
 
 " Enable folding
-command! Folds set fdm=syntax
+"command! Folds set fdm=syntax
+set nofoldenable    " disable folding
 
 " Shell with output captured
 command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
@@ -1037,8 +1038,7 @@ let wiki_sync.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 
 let g:vimwiki_list = [wiki_sync]
 
-" Folding
-let g:vimwiki_folding=0
+
 " }}}
 " {{{ XPTemplate
 " let g:xptemplate_key='<c-m>'
@@ -1061,20 +1061,6 @@ let g:yankstack_map_keys = 0
 let g:vimfiler_as_default_explorer = 1
 " }}}
 " {{{ YouCompleteMe
-if g:ycm_requirements_met && index(g:hosts_ycm, hostname()) >= 0
-    let g:ycm_semantic_triggers = {'haskell' : ['.']}
-
-    " mappings
-    nnoremap [ycm] <Nop>
-    nmap <Leader>y [ycm]
-    nnoremap [ycm]y :YcmCompleter 
-    nnoremap [ycm]g :YcmCompleter GoTo<CR>
-    nnoremap [ycm]f :YcmCompleter GoToDefinition<CR>
-    nnoremap [ycm]d :YcmCompleter GetDoc<CR>
-    nnoremap [ycm]t :YcmCompleter GetType<CR>
-
-    let g:ycm_confirm_extra_conf=0
-endif
 " }}}
 " }}}
 " {{{ Postscript

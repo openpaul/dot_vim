@@ -17,25 +17,25 @@ Plugin 'tpope/vim-pathogen'
 " {{{ Github repositories
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'sjbach/lusty'
+"Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-repeat'
+"Plugin 'tpope/vim-unimpaired'
+"Plugin 'sjbach/lusty'
 Plugin 'godlygeek/tabular'
 Plugin 'sjl/gundo.vim'
 Plugin 'gregsexton/gitv'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/L9'
+"Plugin 'vim-scripts/L9'
 Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/FSwitch'
-Plugin 'ehamberg/vim-cute-python'
-Plugin 'Twinside/vim-haskellConceal'
-Plugin 'trapd00r/vim-syntax-vidir-ls'
-Plugin 'Raimondi/delimitMate'
+"Plugin 'vim-scripts/FSwitch'
+"Plugin 'ehamberg/vim-cute-python'
+"Plugin 'Twinside/vim-haskellConceal'
+"Plugin 'trapd00r/vim-syntax-vidir-ls'
+Plugin 'Raimondi/delimitMate' " inserting mssing brackets and stuff
 Plugin 'vim-scripts/SudoEdit.vim'
-Plugin 'kana/vim-textobj-line'
-Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/DirDiff.vim'
+"Plugin 'kana/vim-textobj-line'
+"Plugin 'honza/vim-snippets'
+"Plugin 'vim-scripts/DirDiff.vim'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Lokaltog/vim-easymotion'
@@ -43,44 +43,45 @@ Plugin 'vim-scripts/AnsiEsc.vim'
 Plugin 'coderifous/textobj-word-column.vim'
 Plugin 'kana/vim-textobj-indent'
 Plugin 'kana/vim-textobj-user'
-Plugin 'caio/querycommandcomplete.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'kana/vim-textobj-entire'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-eunuch'
-Plugin 'prendradjaja/vim-vertigo'
-Plugin 'PeterRincker/vim-argumentative'
+"Plugin 'caio/querycommandcomplete.vim'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'kana/vim-textobj-entire'
+"Plugin 'tpope/vim-dispatch'
+"Plugin 'tpope/vim-eunuch'
+"Plugin 'prendradjaja/vim-vertigo'
+"Plugin 'PeterRincker/vim-argumentative'
 Plugin 'sickill/vim-pasta'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/neomru.vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'shougo/unite-outline'
-Plugin 'shougo/neoyank.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin 'Shougo/neossh.vim'
-Plugin 'vimwiki/vimwiki'
-Plugin 'mhinz/vim-signify'
-Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'groenewege/vim-less'
-Plugin 'ivyl/vim-bling'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'justinmk/vim-sneak'
-Plugin 'tommcdo/vim-exchange'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'mileszs/ack.vim'
-Plugin 'dyng/ctrlsf.vim'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'AndrewRadev/linediff.vim'
+"Plugin 'Shougo/unite.vim'
+"Plugin 'Shougo/neomru.vim'
+"Plugin 'Shougo/vimproc.vim'
+"Plugin 'shougo/unite-outline'
+"Plugin 'shougo/neoyank.vim'
+"Plugin 'Shougo/vimfiler.vim'
+"Plugin 'Shougo/neossh.vim'
+"Plugin 'vimwiki/vimwiki'
+"Plugin 'mhinz/vim-signify'
+"Plugin 'Glench/Vim-Jinja2-Syntax'
+"Plugin 'groenewege/vim-less'
+"Plugin 'ivyl/vim-bling'
+"Plugin 'LaTeX-Box-Team/LaTeX-Box'
+"Plugin 'justinmk/vim-sneak'
+"Plugin 'tommcdo/vim-exchange'
+"Plugin 'tmhedberg/SimpylFold'
+"Plugin 'mileszs/ack.vim'
+"Plugin 'dyng/ctrlsf.vim'
+"Plugin 'jamessan/vim-gnupg'
+"Plugin 'AndrewRadev/linediff.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'majutsushi/tagbar'
-Plugin 'AndrewRadev/id3.vim'
-Plugin 'guns/xterm-color-table.vim'
-Plugin 'kana/vim-operator-user'
+"Plugin 'majutsushi/tagbar'
+"Plugin 'AndrewRadev/id3.vim'
+"Plugin 'guns/xterm-color-table.vim'
+"Plugin 'kana/vim-operator-user'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'christoomey/vim-sort-motion'
-Plugin 'vim-scripts/ReplaceWithRegister' 
-Plugin 'nathangrigg/vim-beancount'
+"Plugin 'christoomey/vim-sort-motion'
+"Plugin 'vim-scripts/ReplaceWithRegister' 
+"Plugin 'nathangrigg/vim-beancount'
 Plugin 'jalvesaq/Nvim-R'
+Plugin 'davidhalter/jedi-vim'
 " {{{ Disabled stfuff:
 " Plugin 'qpkorr/vim-renamer'
 " Plugin 'mantiz/vim-plugin-dirsettings'
@@ -123,49 +124,49 @@ Plugin 'jalvesaq/Nvim-R'
 " Plugin 'nelstrom/vim-visual-star-search' " Suspect errors when searching
 " }}}
 
-Plugin 'sanjayankur31/sli.vim'
+"Plugin 'sanjayankur31/sli.vim'
 
-if executable('ghc')
-    Plugin 'lukerandall/haskellmode-vim'
-    Plugin 'eagletmt/neco-ghc'
-    Plugin 'commercialhaskell/hindent'
-endif
-if executable('ghc-mod')
-    Plugin 'eagletmt/ghcmod-vim'
-endif
+"if executable('ghc')
+"    Plugin 'lukerandall/haskellmode-vim'
+"    Plugin 'eagletmt/neco-ghc'
+"    Plugin 'commercialhaskell/hindent'
+"endif
+"if executable('ghc-mod')
+"    Plugin 'eagletmt/ghcmod-vim'
+"endif
 
-if executable('ledger')
-    Plugin 'ledger/vim-ledger'
-endif
+"if executable('ledger')
+"    Plugin 'ledger/vim-ledger'
+"endif
 
 " only use taskwarrior where we use task
-if executable('task')
-    Plugin 'farseer90718/vim-taskwarrior'
-endif
+"if executable('task')
+"    Plugin 'farseer90718/vim-taskwarrior'
+"endif
 
 " Since YCM requires manual installation, dont enable it by default everywhere
-let g:hosts_ycm=["dopamine", "lark", "hel", "abed", "beli"]
-let g:hosts_no_jedi=["gordon"]
-let g:ycm_requirements_met = v:version >= 704 || (v:version == 703 && has('patch584'))
-if g:ycm_requirements_met && index(g:hosts_ycm, hostname()) >= 0
-    Plugin 'Valloric/YouCompleteMe'
-    Plugin 'rdnetto/YCM-Generator'
-elseif index(g:hosts_no_jedi, hostname()) == -1
-    Plugin 'davidhalter/jedi-vim'
-endif
+"let g:hosts_ycm=["dopamine", "lark", "hel", "abed", "beli"]
+"let g:hosts_no_jedi=["gordon"]
+"let g:ycm_requirements_met = v:version >= 704 || (v:version == 703 && has('patch584'))
+"if g:ycm_requirements_met && index(g:hosts_ycm, hostname()) >= 0
+"    Plugin 'Valloric/YouCompleteMe'
+"    Plugin 'rdnetto/YCM-Generator'
+"elseif index(g:hosts_no_jedi, hostname()) == -1
+"    Plugin 'davidhalter/jedi-vim'
+"endif
 
-if v:version >= 703
-      " Plugin 'chrisbra/histwin.vim'
-endif
-if v:version >= 704
-    "Plugin 'SirVer/ultisnips'
-endif
+"if v:version >= 703
+"      " Plugin 'chrisbra/histwin.vim'
+"endif
+"if v:version >= 704
+"    "Plugin 'SirVer/ultisnips'
+"endif
 
 
-let s:atp_hosts=["lark"]
-if index(s:atp_hosts, hostname()) >= 0
-    Plugin 'dermusikman/sonicpi.vim'
-endif
+"let s:atp_hosts=["lark"]
+"if index(s:atp_hosts, hostname()) >= 0
+"    Plugin 'dermusikman/sonicpi.vim'
+"endif
 
 " For standalone only (see
 " https://github.com/Lokaltog/powerline/blob/develop/docs/source/overview.rst)
@@ -173,16 +174,16 @@ endif
 " }}}
 
 " {{{ My stuff
-Plugin 'obreitwi/vim-sort-folds'
+"Plugin 'obreitwi/vim-sort-folds'
 " }}}
 
 " {{{ Other repositories
 " Only install atp on hosts where latex editing takes place
 " let s:atp_hosts=["juno", "phaelon", "nurikum"]
-let s:atp_hosts=[]
-if index(s:atp_hosts, hostname()) >= 0
-      " Plugin 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'
-endif
+"let s:atp_hosts=[]
+"if index(s:atp_hosts, hostname()) >= 0
+"      " Plugin 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'
+"endif
 " }}}
 
 call vundle#end()
