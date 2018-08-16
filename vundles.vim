@@ -82,6 +82,7 @@ Plugin 'rhysd/vim-clang-format'
 "Plugin 'nathangrigg/vim-beancount'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'nvie/vim-flake8'
 " {{{ Disabled stfuff:
 " Plugin 'qpkorr/vim-renamer'
 " Plugin 'mantiz/vim-plugin-dirsettings'
