@@ -1067,3 +1067,7 @@ let g:vimfiler_as_default_explorer = 1
 augroup end
 " vim: fdm=marker ts=4 sw=4 sts=4
 " }}}
+"
+"
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.smk set syntax=snakemake
