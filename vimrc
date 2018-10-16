@@ -219,7 +219,7 @@ vnoremap Q gq
 map Y y$ 
 
 imap <silent> <C-D><C-E> <C-R>=strftime("%d.%m.%Y %H:%M:%S")<CR>
-imap <silent> <C-D><C-D> <C-R> --obreitwi, <C-R>=strftime("%d-%m-%y %H:%M:%S")<CR>
+"imap <silent> <C-D><C-D> <C-R> --obreitwi, <C-R>=strftime("%d-%m-%y %H:%M:%S")<CR>
 imap <silent> <C-D><C-F> <C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR>
 imap <silent> <C-D><C-R> <C-R>=strftime("%Y/%m/%d")<CR>
 imap <silent> <C-D><C-W> <C-R>=strftime("%Y-%m-%d")<CR>
@@ -811,17 +811,6 @@ let g:LatexBox_custom_inden=0
 " {{{ Large Files
 let g:LargeFile=100
 " }}}
-" {{{ Latex Journal
-" (my very first plugin, utterly useless, but I keep the " config for
-" sentimental sake)
-if g:opsystem == "CYGWIN_NT-6.1-WOW64"
-    let g:LatexNotesBase = "/cygdrive/c/Users/Desoxy/latexNotes/"
-elseif g:opsystem == "Linux"
-    let g:LatexNotesBase = "/home/obreitwi/.notes/"
-elseif g:opsystem == "windows"
-    let g:LatexNotesBase = "C:/Users/Desoxy/latexNotes"
-endif
-" }}}
 " {{{ LineDiff
 map <leader>ld :Linediff<CR>
 map <leader>dr :LinediffReset<CR>
@@ -1042,9 +1031,9 @@ let g:vimwiki_list = [wiki_sync]
 " }}}
 " {{{ XPTemplate
 " let g:xptemplate_key='<c-m>'
-let g:xptemplate_brace_complete=1
-let g:xptemplate_vars="$author=Oliver Breitwieser&$email=oliver.breitwieser@gmail.com"
-let g:snips_author = 'Oliver Breitwieser'
+"let g:xptemplate_brace_complete=1
+"let g:xptemplate_vars="$author=ser&$email=oliver.breitwieser@gmail.com"
+"let g:snips_author = 'Paul Saary'
 autocmd vimrc FileType tex let g:xptemplate_brace_completes=0
 autocmd vimrc FileType vim let g:xptemplate_brace_completes=0
 " }}}
