@@ -409,7 +409,9 @@ filetype plugin on
 filetype indent on
 filetype plugin indent on
 syntax on
-let g:anyfold_activate=1
+" let g:anyfold_activate=1
+autocmd Filetype * AnyFoldActivate
+let g:anyfold_fold_comments=1
 set foldlevel=0
 
 " Reload vimrc after writing
