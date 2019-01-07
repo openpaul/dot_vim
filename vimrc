@@ -407,6 +407,10 @@ filetype plugin on
 " autocmd FileType python set ofu=syntaxcomplete#Complete
 
 filetype indent on
+filetype plugin indent on
+syntax on
+let g:anyfold_activate=1
+set foldlevel=0
 
 " Reload vimrc after writing
 autocmd! vimrc BufWritePost .vimrc source $MYVIMRC

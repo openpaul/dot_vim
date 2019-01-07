@@ -15,6 +15,17 @@ Plugin 'tpope/vim-pathogen'
 " }}}
 
 " {{{ Github repositories
+" R Stuff
+"Plugin 'jalvesaq/Nvim-R'
+"Plugin 'roxma/nvim-completion-manager'
+"Plugin 'gaalcaras/ncm-R'
+"Plugin 'sirver/UltiSnips'
+
+" done R stuff
+Plugin 'pseewald/vim-anyfold' "folding stuff
+Plugin 'lervag/vimtex'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-surround'
