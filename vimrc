@@ -1066,3 +1066,4 @@ augroup end
 "
 au BufNewFile,BufRead Snakefile set syntax=snakemake
 au BufNewFile,BufRead *.smk set syntax=snakemake
+inoremap <S-Tab> <C-V><Tab>
