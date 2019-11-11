@@ -243,6 +243,7 @@ endif
 " nmap <Leader>ll :set list!<CR>
 
 " Lazy movement, for the few times it actually is faster than easymotion
+nnoremap K <nop>
 nmap J 8j
 vmap J 8j
 nmap K 8k
@@ -1067,3 +1068,8 @@ augroup end
 au BufNewFile,BufRead Snakefile set syntax=snakemake
 au BufNewFile,BufRead *.smk set syntax=snakemake
 inoremap <S-Tab> <C-V><Tab>
+let g:jedi#documentation_command = "H"
+
+" Black
+let g:black_linelength=120
+let g:syntastic_python_pylint_post_args="--max-line-length=120"
